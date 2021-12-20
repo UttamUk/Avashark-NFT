@@ -380,6 +380,12 @@ h1{
     width: 100%;
     display: flex;
     align-items: center;
+    @include xsm{
+        min-height: 250px;
+    }
+    @include sm{
+        min-height: 260px;
+    }
     .about-txt{
         color: #ffffff;
         margin: 0;
@@ -392,6 +398,14 @@ h1{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .splide__track{
+        @include xsm{
+            height: 250px !important;
+        }
+        @include sm{
+            height: 260px !important;
+        }
     }
 }
 
