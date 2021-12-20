@@ -28,31 +28,59 @@ $(document).ready((function () {
 	// });
 }));
 
-$(document).ready(function () {
-	$('#roadmap').owlCarousel({
-		loop: false,
-		margin: 30,
-		nav: true,
-		// rewind: true,
-		dots: false,
-		navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-		autoplay: false,
-		// autoplaySpeed: 100,
-		// autoPlay: 20000,
-		// center:true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 1
-			},
-			// 1000: {
-			// 	items: 
-			// }
-		}
-	});
-});
+// $(document).ready(function () {
+// 	$('#about').owlCarousel({
+// 		loop: false,
+// 		margin: 30,
+// 		nav: true,
+// 		// rewind: true,
+// 		dots: false,
+// 		navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+// 		autoplay: false,
+// 		// autoplaySpeed: 100,
+// 		// autoPlay: 20000,
+// 		// center:true,
+// 		responsive: {
+// 			0: {
+// 				items: 1
+// 			},
+// 			600: {
+// 				items: 1
+// 			},
+// 			// 1000: {
+// 			// 	items: 
+// 			// }
+// 		}
+// 	});
+// 	$('#roadmap').owlCarousel({
+// 		loop: false,
+// 		margin: 30,
+// 		nav: true,
+// 		// rewind: true,
+// 		dots: false,
+// 		// navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+// 		navText: ['<img src="../images/icons/icon-left.svg">', '<img src="../images/icons/icon-right.svg">'],
+// 		// autoplaySpeed: 100,
+// 		// autoPlay: 20000,
+// 		// center:true,
+// 		autoplayHoverPause: true,
+// 		autoplay: true,
+// 		// animateOut: 'slideOutUp',
+// 		// animateIn: 'slideInUp',
+// 		items: 1,
+// 		// responsive: {
+// 		// 	0: {
+// 		// 		items: 1
+// 		// 	},
+// 		// 	600: {
+// 		// 		items: 1
+// 		// 	},
+// 		// 	// 1000: {
+// 		// 	// 	items: 
+// 		// 	// }
+// 		// }
+// 	});
+// });
 
 
 window.sr = ScrollReveal();
@@ -81,7 +109,7 @@ sr.reveal('.aboutus-image-box', {
 	distance: '100px',
 	delay: 100,
 	opacity: 0,
-    // scale: 0.6
+	// scale: 0.6
 });
 
 // sr.reveal('.sr-bx2', {
