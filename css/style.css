@@ -1410,14 +1410,20 @@ h1 {
   0%, 100% {
     background-image: url("../images/as1.jpg");
   }
-  25% {
+  20% {
     background-image: url("../images/as3.jpeg");
   }
-  50% {
+  40% {
     background-image: url("../images/as5.jpeg");
   }
-  75% {
+  60% {
     background-image: url("../images/as7.jpg");
+  }
+  80% {
+    background-image: url("../images/as2.jpeg");
+  }
+  90% {
+    background-image: url("../images/as4.jpg");
   }
 }
 
@@ -1425,14 +1431,20 @@ h1 {
   0%, 100% {
     background-image: url("../images/as1.jpg");
   }
-  25% {
+  20% {
     background-image: url("../images/as3.jpeg");
   }
-  50% {
+  40% {
     background-image: url("../images/as5.jpeg");
   }
-  75% {
+  60% {
     background-image: url("../images/as7.jpg");
+  }
+  80% {
+    background-image: url("../images/as2.jpeg");
+  }
+  90% {
+    background-image: url("../images/as4.jpg");
   }
 }
 
