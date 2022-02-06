@@ -709,9 +709,9 @@ h1{
                 font-size: 13px;
                 min-height: 130px;
             }
-            &:hover{
-                transform: scale(1.02);
-            }
+            // &:hover{
+            //     transform: scale(1.02);
+            // }
             &.anim{
                 opacity: 1;
                 top: 0;
@@ -923,6 +923,157 @@ h1{
         }
     }
 }
+
+
+
+
+.prof-sec{
+    height: 100vh;
+    padding: 3%;
+    perspective: 1000px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    animation: bgi 15s ease infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include xsm{
+        height: 50vh;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        // background: linear-gradient(90deg, rgba(69, 193, 235, 0.6) 0%, rgba(255, 192, 203, 0.6) 100%);
+        background-position: 300% 300%;
+        animation: bg 10s linear delay iteration-count direction fill-mode;
+    }
+    .circle{
+        width: 500px;
+        height: 500px;
+        // border: 8px solid #aaa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        @include xsm{
+            width: 300px;
+            height: 300px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            border: 2px dashed #c9c9c9;
+            border-radius: 50%;
+            animation: circle 40s linear infinite;
+        }
+        .main-imp{
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border: 5px groove #b9b9b9;
+            background-color: rgb(27, 27, 27);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 400ms ease;
+            &:hover{
+                transform: scale(1.4);
+                border-radius: 0px;
+            }
+            img{
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+        .circle-img{
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 5px solid #ffffff; 
+            // border-style: groove;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            animation: move 10s linear infinite;
+            @include xsm{
+                width: 80px;
+                height: 80px;
+            }
+            @for $i from 1 to 5 {
+                &:nth-child(#{$i}){
+                    animation-delay: #{2.5*$i}s;
+                }                
+            }
+            img{
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+
+@keyframes circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes bgi{
+    0%, 100%{
+        background-image: url('../images/as1.jpg');
+    }
+    25%{
+        background-image: url('../images/as3.jpeg');
+    }
+    50%{
+        background-image: url('../images/as5.jpeg');
+    }
+    75%{
+        background-image: url('../images/as7.jpg');
+    }
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
+}
+
+@include xsm{
+    @keyframes move{
+        0%{
+            transform: rotate(0deg) translate(120px) rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg) translate(120px) rotate(-360deg);
+        }
+    }
+}
+
+
 
 footer{
     position: fixed;
