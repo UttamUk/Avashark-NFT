@@ -415,6 +415,12 @@ a, button{
         padding: 15px;
         position: relative;
         z-index: 99;
+        @include xsm{
+            margin-top: 6%;
+        }
+        @include sm{
+            margin-top: 6%;
+        }
         // -webkit-box-reflect: below -80% linear-gradient(to bottom, rgba(0, 0, 0, 0.199) 0%, rgba(202, 202, 202, 0.329) 10%);
         &::before{
             content: "";
@@ -457,11 +463,14 @@ a, button{
                 padding: 0px 15px 0px 15px;
                 &:nth-last-child(1){
                     width: 100px;
+                    @include xsm{
+                        width: 68px;
+                    }
                     // background-color: #fff;
                 }
                 span {
                     display: block;
-                    font-size: 52px !important;
+                    font-size: 52px;
                     font-family: Poppins-Bold;
                     line-height: 1;
                     @include xsm{
@@ -484,6 +493,9 @@ h1{
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 15px;
+    @include xsm{
+        font-size: 55px;
+    }
 }
 
 .content{

@@ -569,6 +569,18 @@ a, button {
   z-index: 99;
 }
 
+@media (max-width: 575.98px) {
+  .home-right #countdown {
+    margin-top: 6%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .home-right #countdown {
+    margin-top: 6%;
+  }
+}
+
 .home-right #countdown::before {
   content: "";
   position: absolute;
@@ -616,9 +628,15 @@ a, button {
   width: 100px;
 }
 
+@media (max-width: 575.98px) {
+  .home-right #countdown ul li:nth-last-child(1) {
+    width: 68px;
+  }
+}
+
 .home-right #countdown ul li span {
   display: block;
-  font-size: 52px !important;
+  font-size: 52px;
   font-family: Poppins-Bold;
   line-height: 1;
 }
@@ -641,6 +659,12 @@ h1 {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 55px;
+  }
 }
 
 .content {
